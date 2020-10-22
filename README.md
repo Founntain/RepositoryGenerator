@@ -2,7 +2,7 @@
 
 ## Preparing the script
 First you need to create a `config.json` the config should look like this
-```JavaScript
+```JSON
 {
     "username": "YOUR_GITHUB_USERNAME",
     "password": "YOUR_GITHUB_PASSWORD",
