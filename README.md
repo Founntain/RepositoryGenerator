@@ -1,11 +1,12 @@
 # Test 
 
 ## Preparing the script
-First you need to create a `config.json` the config should look like this
+First you need to create a `config.json` the config should look like this.  
+Yes please keep in mind that your `repositoryFolder` should end with `\\`!
 ```JSON
 {
     "username": "YOUR_GITHUB_USERNAME",
-    "password": "YOUR_GITHUB_PASSWORD",
+    "accessToken": "YOUR_ACCESS_TOKEN",
     "repositoryFolder": "Y:\\PATH\\TO\\YOUR\\REPOSITORIES\\FOLDER\\",
     "codeCommand": "code ."
 }

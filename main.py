@@ -7,13 +7,13 @@ def main():
     with open('config.json') as file:
         data = json.load(file)
 
-    #Get Username, password, repository path & code command
+    #Get Username, accessToken, repository path & code command
     username = data["username"]
-    password = data["password"]
+    accessToken = data["accessToken"]
     repositoriesPath = data["repositoryFolder"]
     codeCommand = data["codeCommand"]
 
-    github = Github(username, password)
+    github = Github(accessToken)
 
     repoName = input("Enter a repository name: ")
     description = input("Enter a description or leave blank: ")
@@ -43,7 +43,7 @@ def main():
     os.chdir(repositoriesPath + newRepo.name)
     #Create README.md and initialize a new Git repository
     #And push it to the new GitHub repository
-    os.system("echo # Test >> README.md");
+    os.system("echo # " + newRepo.name  +" >> README.md");
     os.system("git init")
     os.system("git add *")
     os.system("git commit -m \"Init Commit\"")
