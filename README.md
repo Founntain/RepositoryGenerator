@@ -1,4 +1,4 @@
-# Test 
+# GitHub Repository Generator written in Python
 
 ## Preparing the script
 First you need to create a `config.json` the config should look like this.  
