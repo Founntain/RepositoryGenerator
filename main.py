@@ -17,6 +17,7 @@ def main():
 
     repoName = input("Enter a repository name: ")
     description = input("Enter a description or leave blank: ")
+    website = input("Enter a website or leave blank: ")
 
     private = False
     try:
@@ -34,7 +35,7 @@ def main():
     user = github.get_user()
 
     #Create new repository on GitHub
-    newRepo = user.create_repo(repoName, description, "", private)
+    newRepo = user.create_repo(repoName, description, website, private)
 
     print("New repo with name" + newRepo.name + " created...\nInitializing repo with README.md")
 
